@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Product Page</title>
+    <title>John D's Signature Coffee</title>
     <!-- Styles -->
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&family=Oswald&display=swap"
@@ -21,29 +21,48 @@
             <a class="nav-link" href="#flavor">Flavor Profile</a>
           </li>
           <li>
-            <a class="nav-link" href="#video">How It's Made</a>
+            <a class="nav-link" href="#coffeeHistory">Coffee History</a>
           </li>
           <li>
-            <a class="nav-link" href="#form">Contact</a>
+            <a class="nav-link" href="#form">Pricing</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div id="flavor"></div>
-      <iframe
-        id="video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/wuIiy5c_iHw"
-        frameborder="2px"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen="allowfullscreen"></iframe>
+      <div class="pageTitle">
+        <h1>John D's Signature Blend</h1>
+      </div>
+      <div id="flavor">
+        <h2>Flavor Profile</h2>
+        <img
+          class="image"
+          src="https://www.coffeeanalysts.com/wp-content/uploads/2009/10/acme-comparison.jpg"
+          alt="Signature
+        Blend Flavor Profile Spider Chart">
+      </div>
+      <div id="coffeeHistory">
+        <h2>Coffee History</h2>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wuIiy5c_iHw"
+          frameborder="2px"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"></iframe>
+      </div>
       <form class="contactForm" id="form" action="https://www.freecodecamp.com/email-submit">
-        <h3>Contact Us:</h3>
-        <input class="inputField" type="text" placeholder="Name">
+        <h3>Wholesale Pricing Inquiry:</h3>
+        <label class="inputLabel" for="name">Name:
+        </label>
+        <input class="inputField" id="name" type="text" placeholder="Name">
+        <label class="inputLabel" for="email">Email:
+        </label>
         <input name="email" id="email" class="inputField" type="email" placeholder="Email">
-        <input class="inputField message" type="text" placeholder="Message">
+        <label class="inputLabel" for="message">Message:
+        </label>
+        <input class="inputField message" id="message" type="text" placeholder="Message">
         <input class="inputField" id="submit" type="submit">
         <br>
       </form>
